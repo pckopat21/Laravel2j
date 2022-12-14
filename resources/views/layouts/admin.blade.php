@@ -28,6 +28,7 @@
 <body>
 @include('admin._header')
 @include('admin._sidebar')
+
 @yield('content')
 @include('admin._footer')
 @yield('footer')
