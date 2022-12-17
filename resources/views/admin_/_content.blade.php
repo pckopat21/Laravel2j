@@ -1,3 +1,8 @@
+
+
+<!-- ============================================================== -->
+<!-- Start right Content here -->
+<!-- ============================================================== -->
 <div class="main-content">
 
     <div class="page-content">
@@ -1275,6 +1280,7 @@
                                         </div><!-- end row -->
                                     </div>
                                 </div>
+
                                 <div class="card sidebar-alert bg-light border-0 text-center mx-4 mb-0 mt-3">
                                     <div class="card-body">
                                         <img src="{{asset('assets') }}/admin/images/giftbox.png" alt="">
@@ -1285,15 +1291,35 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div> <!-- end card-->
                     </div> <!-- end .rightbar-->
+
                 </div> <!-- end col -->
             </div>
+
         </div>
         <!-- container-fluid -->
     </div>
-
     <!-- End Page-content -->
-    <!-- footer -->
 
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <script>document.write(new Date().getFullYear())</script> © Velzon.
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end d-none d-sm-block">
+                        Design & Develop by Themesbrand
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
