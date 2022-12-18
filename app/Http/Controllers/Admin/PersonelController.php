@@ -50,8 +50,6 @@ class PersonelController extends Controller
      */
     public function create(Request $request)
     {
-
-
         DB::table('personel')->insert([
             'personel_adsoyad' => $request->input('personel_adsoyad'),
             'personel_tc' => $request->input('personel_tc'),

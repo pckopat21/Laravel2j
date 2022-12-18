@@ -32,6 +32,12 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
         Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin_home');
         # Category
+        Route::get('kullanici', [\App\Http\Controllers\Admin\KullaniciController::class, 'index'])->name('admin_kullanici');
+        Route::post('kullanici/update/{id}', [\App\Http\Controllers\Admin\KullaniciController::class, 'update'])->name('admin_kullanici_update');
+        Route::get('kullanici/edit/{id}', [\App\Http\Controllers\Admin\KullaniciController::class, 'edit'])->name('admin_kullanici_edit');
+        Route::post('kullanici/create', [\App\Http\Controllers\Admin\KullaniciController::class, 'create'])->name('admin_kullanici_create');
+
+
         Route::get('personel', [\App\Http\Controllers\Admin\PersonelController::class, 'index'])->name('admin_personel');
         Route::get('personel/add', [\App\Http\Controllers\Admin\PersonelController::class, 'add'])->name('admin_personel_add');
         Route::post('personel/create', [\App\Http\Controllers\Admin\PersonelController::class, 'create'])->name('admin_personel_create');
